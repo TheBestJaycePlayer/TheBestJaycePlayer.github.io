@@ -6,7 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>吴桐的个人网站</title>
 </head>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/react.development.js"></script>
+<script src="./js/react-dom.development.js"></script>
+<script src="./js/babel.min.js"></script>
 <body>
     <h1>此页面是吴桐的个人网站</h1>
+    <div id="box"></div>
+    <script type="text/babel">
+        class App extends React.Component{
+
+            render(){
+                return(
+                    <div>
+                        <h1>冰玉 超棒的欸</h1>    
+                    </div>
+                )
+            }
+        }
+        const root = ReactDOM.createRoot(document.querySelector("#box"))
+        root.render(<App/>)
+      </script>
 </body> 
 </html>
